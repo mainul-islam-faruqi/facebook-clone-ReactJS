@@ -6,7 +6,6 @@ function App() {
   return (
     // BEM namin convention
     <div className="app">
-      <h1> let's build facebook </h1>
       {/* Header */}
       <Header></Header>
 
