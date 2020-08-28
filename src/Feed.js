@@ -8,6 +8,7 @@ const Feed = () => {
         <div className="feed">
             <StoryReal />
             <MessageSender />
+            
         </div>
     );
 };

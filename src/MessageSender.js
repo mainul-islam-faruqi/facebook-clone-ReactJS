@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./MessageSender.css"
 import { Avatar, Input } from '@material-ui/core';
 import VideocamIcon from '@material-ui/icons/Videocam';
@@ -8,17 +8,27 @@ import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
 
 const MessageSender = () => {
 
+    const [input,setInput] = useState("");
+    const [imageUrl, setImageUrl] = useState("");
+ console.log(imageUrl);
     const handleSubmit = e => {
-        e.preventDefault();
+        e.preventDefault(); // don't take reload when submitting
+        
+        
+        setInput("");
+        setImageUrl("");
     };
     return (
         <div className="messageSender">
            <div className="messageSender__top">
                 <Avatar />
                 <form>
-                    <input className="messageSender__input" placeholder="What's on your mind?" type="text" name="" id=""/>
+                    <input value={input} 
+                    onChange={(e) => setInput(e.target.value)}
+                    className="messageSender__input" placeholder="What's on your mind?" />
 
-                    <input type="text" placeholder="image URL (Optional)" />
+                    <input value={imageUrl}
+                    onChange={e => setImageUrl(e.target.value)}  placeholder="image URL (Optional)" />
 
                     <button onClick={handleSubmit} type="submit">
                         Hidden submit
