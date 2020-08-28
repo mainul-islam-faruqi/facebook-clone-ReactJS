@@ -43,7 +43,7 @@ const Header = () => {
 
             <div className="header__right">
                 <div className="header__info">
-                    <Avatar />
+                    <Avatar src="https://avatars2.githubusercontent.com/u/53335400?s=460&u=66cb296ad68ebb5d86c162a6b5aece93977865fd&v=4" title="Crazy Python Lover" />
                     <h4> MIF </h4>
                 </div>
                 <IconButton>

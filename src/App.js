@@ -12,11 +12,14 @@ function App() {
       <Header></Header>
 
       {/* App body */}
-        {/* Sidebar */}
-        <Sidebar></Sidebar>
-        {/* Feed */}
-        <Feed />
-        {/* widgets */}
+      <div className="app__body">
+          {/* Sidebar */}
+          <Sidebar></Sidebar>
+          {/* Feed */}
+          <Feed />
+          {/* widgets */}
+      </div>
+        
     </div>
   );
 }
