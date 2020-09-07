@@ -18,10 +18,10 @@ const Feed = () => {
                 />
             <Post
             profilePic="https://avatars2.githubusercontent.com/u/53335400?s=460&u=66cb296ad68ebb5d86c162a6b5aece93977865fd&v=4"
-            message="Wow this work and it is first message" 
+            message="Wow this work and it is Second message" 
             timestamp="timestamp"
             username="Mainul Islam Faruqi"
-            image="https://www.appventurez.com/blog/wp-content/uploads/2019/05/image11.png"
+            image="https://www.tco-team.com/blog/wp-content/uploads/2019/01/the-most-popular-programming-languages-in-2018.jpg"
             />
             <Post/>
             <Post/>
