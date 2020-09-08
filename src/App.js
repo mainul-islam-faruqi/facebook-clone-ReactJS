@@ -14,7 +14,7 @@ function App() {
       {/* App body */}
       <div className="app__body">
           {/* Sidebar */}
-          <Sidebar></Sidebar>
+          <Sidebar style={{width:"600px"}}></Sidebar>
           {/* Feed */}
           <Feed />
           {/* widgets */}

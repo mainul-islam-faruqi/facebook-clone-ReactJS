@@ -11,11 +11,16 @@
 }
 
 .sidebarRow > h4{
-    margin-left:20px;
-    font-weight: 600;
+    margin-left:15px;
+    font-weight: 500;
+    font-size:15px;
 }
 
 .sidebarRow > .MuiSvgIcon-root{
-    font-size:xx-large;
+    font-size:x-large;
     color: #2e81f4;
 }
+.sidebarRow > .MuiAvatar-img{
+    font-size: 1rem;
+}
+
