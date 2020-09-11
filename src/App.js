@@ -5,14 +5,18 @@ import Sidebar from './Sidebar';
 import Feed from './Feed';
 import Widgets from './Widgets';
 import Login from './Login';
+import { useStateValue } from "./StateProvider";
 
 function App() {
-  const user = null;
+  const user = "Mainuyl";
+  // const [{user}, dispatch] = useStateValue();
   return (
     // BEM namin convention
     <div className="app">
       {
-        user ? (
+        !user?(
+        <Login/>
+        ):(
           <>
           {/* Header */}
           <Header></Header>
@@ -27,7 +31,7 @@ function App() {
               <Widgets />
           </div>
         </>
-        ) : <Login/>
+        )
         
       }
         
